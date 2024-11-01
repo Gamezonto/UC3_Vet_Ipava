@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+
+/* Aplicando a fonte globalmente */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Seção principal */
+.about-us {
+    background-color: #e0f7f9;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 1200px;
+    margin: 40px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card principal: Layout em duas colunas */
+.main-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+    background-color: #a2f1f1;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagem e título alinhados à esquerda */
+.image-content {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.image-content h3 {
+    font-family: 'Playfair Display', serif; /* Fonte para título */
+    font-size: 2rem; /* Aumente o tamanho para destacar */
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.clinic-image {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Sub-cards à direita */
+.cards-container {
+    flex: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas */
+    grid-template-rows: auto auto; /* Duas linhas */
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/* Info Card */
+.info-card {
+    display: flex;
+    justify-content: center;
+}
+
+/* Sub-card */
+.sub-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo */
+    gap: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+/* Animação de hover */
+.sub-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagem dentro do sub-card */
+.sub-card-image {
+    width: 80px; /* Aumenta o tamanho da imagem */
+    height: 80px; /* Aumenta o tamanho da imagem */
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de rotação sutil ao passar o mouse */
+.sub-card:hover .sub-card-image {
+    transform: rotate(5deg);
+}
+
+/* Texto no sub-card */
+.sub-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+    font-weight: 500;
+    text-align: center; /* Centraliza o texto */
+}
